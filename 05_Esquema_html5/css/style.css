@@ -1,0 +1,11 @@
+.main_header {
+    background-color: brown;
+    color: bisque;
+    padding: 0,8rem 1rem 0,5rem 0rem
+}
+.main_footer {
+    background-color: brown;
+    color: bisque;
+    text-align: center;
+    padding: 1rem;
+}
