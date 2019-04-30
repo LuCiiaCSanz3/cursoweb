@@ -1,0 +1,32 @@
+body { 
+    color: rgba(166, 15, 172, 0.63) ;
+    background-color:rgb(234, 247, 179);
+    margin: 0rem;
+    font-family: 'Times New Roman' }
+
+.main_header {
+    background-color:#632A50;
+    color: #C2E812 ;
+    font-family: calibri;
+    padding: 0,8rem 1rem 0,5rem 0rem;
+}
+
+.main_footer {
+    font-family: Georgia;
+    background-color: #93748A;
+    color: rgb(170, 248, 230);
+    text-align: center;
+    padding: 1rem;
+    }
+
+.content_wrapper {
+    margin: 1rem 3rem;
+}
+
+.image_wrapper {
+    text-align: center;
+}
+
+img{ 
+    max-width: 100%;
+}
