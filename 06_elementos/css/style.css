@@ -8,7 +8,13 @@ body {
     background-color:#632A50;
     color: #C2E812 ;
     font-family: calibri;
-    padding: 0,8rem 1rem 0,5rem 0rem;
+    padding: 0.8rem 1rem 0.5rem 0rem;
+}
+
+.main_header p {
+font-size: 1.33rem;
+font-weight: bold;
+margin-top: 1rem;
 }
 
 .main_footer {
@@ -29,4 +35,48 @@ body {
 
 img{ 
     max-width: 100%;
+}
+
+.pre_no_mono  {
+    font-family: inherit;
+}
+
+blockquote {
+/*margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 40px;
+margin-inline-end: 40px; */
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    border-left: 4px solid lightgrey;
+    font-style: italic;
+}
+
+blockquote footer {
+    margin-top: 0.5rem;
+    border-top: 1px solid gray;
+    padding-top: 0.3rem;
+    width: fit-content;
+}
+
+/*ul {
+    list-style-type: decimal;
+}
+
+ol {
+list-style-type: disc
+}*/
+
+.dt {
+    float: left;
+    clear: left;
+}
+.dd {
+    float: left;
+    clear: right;
+}
+
+.clearfix {
+    clear: both;
 }

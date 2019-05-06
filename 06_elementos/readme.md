@@ -8,7 +8,7 @@ El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introd
 El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección (p.e, su ancestro mas cercano article, aside, nav, section, blockquote, body, details, fieldset, figure, td). Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
 
 ### Section
-El elemento de HTML section (&lt;section&gt;) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas. Es, por lo tanto, una etiquéta semántica. Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.
+El elemento de HTML section (&lt;section&gt;) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas. Es, por lo tanto, una etiqueta semántica. Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.
 
 ### Nav
 La MDN indica que esta etiqueta crea un menú de navegación (https://developer.mozilla.org).
@@ -18,10 +18,9 @@ El Elemento article de HTML (&lt;article&gt;) representa una composición auto-c
 
 ### Aside
 El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en contenido que está tangencialmente relacionado con el contenido que le rodea, que podría ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados.
-
 ## Grouping
 
-### Parrafos: 
+### Párrafos: 
 p, pre, blockquote
                             
 ### Listas
@@ -32,10 +31,10 @@ p, pre, blockquote
 Ejemplo de lista ordenada
 - Lunes
 - Martes
-- Miercoles
+- Miércoles
 - Jueves
 - Viernes
-- Sabado
+- Sábado
 - Domingo
 
 ### Bloques neutros
@@ -57,7 +56,7 @@ em (emphasis)
 sup
 sub
 
-### Elementos con valor semantico nuevo
+### Elementos con valor semántico nuevo
 b (bold)
 i (italics)
 u (underline)
@@ -67,7 +66,7 @@ s (strike)
 samp (sample)
 code (code)
 kbd (keyboard)
-var (variebles)
+var (variables)
 dfn (definition)
 abbr (abbr)
 
@@ -75,7 +74,7 @@ abbr (abbr)
 q (quote)
 cite (cite o referencia)
 
-### Otras etiquetas semanticas de HTML5
+### Otras etiquetas semánticas de HTML5
 time, e.g. día de la constitución de este año
 mark marcado interactivo
 
@@ -90,7 +89,7 @@ Veremos como utilizar:
 - Video y Audio
     - mp4
     - ogg
-    - webm
+    - webb
 - Elementos de navegación gráficos
 
 ### Imágenes
@@ -108,6 +107,6 @@ Están disponibles los siguientes controles
 - input - text
 - text area
 - checkbox
-- radio butons
+- radio buttons
 - select / options
 - botones
