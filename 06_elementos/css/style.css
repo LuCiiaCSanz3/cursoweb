@@ -2,7 +2,8 @@ body {
     color: rgba(166, 15, 172, 0.63) ;
     background-color:rgb(234, 247, 179);
     margin: 0rem;
-    font-family: 'Times New Roman' }
+    font-family: Calibri;
+}
 
 .main_header {
     background-color:#632A50;
@@ -80,3 +81,23 @@ list-style-type: disc
 .clearfix {
     clear: both;
 }
+
+footer a {
+    color: inherit;
+}
+
+.main_header p {
+    margin-bottom: 0;
+}
+
+.verde {
+    color:#C2E812;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration: line-through;
+}
+/*
+strong {
+    font-weight: normal;
+}
+*/

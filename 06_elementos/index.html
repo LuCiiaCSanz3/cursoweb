@@ -10,11 +10,10 @@
 <body>
     <header class="main_header">
         <h1> Etiquetas de HTML</h1>
-        <p>Clasificación de las etiquetas según el estándar HTML 5.2</p>
+        <p>Clasificación de las <strong>etiquetas</strong> según el <strong>estándar HTML 5.2</strong></p>
     </header>
     <div class="content_wrapper">
-        <p>El estándar diferencia inicialmente tres tipos diferentes de 
-        etiquetas: Sections, Grouping content y Text - level semantics</p>
+        <p>El estándar de <abbr title="HyperText Markup language"><a href="https://www.w3.org/"HTML></a></abbr> diferencia inicialmente tres tipos diferentes de etiquetas: Sections, Grouping content y Text - level semantics</p>
         <section id="sections_elements">
             <header>
                 <h2 lang="en">Sections Elements</h2>    
@@ -82,7 +81,7 @@
             <section id="article">
                 <h3>Etiqueta Article</h3>
                 <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/article" >
-                    El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en un documento,página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable,por ejemplo, en la sindicación.Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido.
+                    El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en un documento,página, una aplicación o en el sitio, que se destina a distribuir de forma <em>independiente o reutilizable</em> ,por ejemplo, en la sindicación.Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido.
                     <footer>
                         <cite>
                             <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/article">
@@ -156,18 +155,142 @@
                             <dt>Bolígrafo bic</dt> <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptate hic et tempora error, mollitia aliquid aperiam a cumque numquam alias reiciendis omnis non nostrum deserunt quo voluptatem vitae exercitationem.</dd>
                             <dt>Pilots</dt> <dd>Explicabo reprehenderit quae, sed dolore temporibus reiciendis adipisci sequi architecto similique consequatur obcaecati quo quibusdam magnam nemo incidunt hic molestiae minus! Repellat iusto accusantium ut quisquam voluptatum similique sequi saepe?</dd>
                         </dl>
+                        <p>Hay algunos atributos específicos de las listas</p>
+                        <ol start="5">
+                            <li>Item</li>
+                            <li>Item</li>
+                        </ol>
+                            <ol reversed>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                                <li>Item 5</li>
+                            </ol>
+                </section>
+                <section>
+                    <h3>Bloques neutros</h3>
+                    <p>La etiqueta div no tiene ningún valor semántico</p>
+                    <p>Unida al uso de las clases CSS es el principal elemento de diseño en la Web</p>
+                </section>
+                <section>
+                    <h3>Bloques nuevos en HTML5</h3>
+                    <ul>
+                        <li>address</li>
+                        <li>main</li>
+                        <li>figure</li>
+                    </ul>
+                    <p>Según aparece en la Web de <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/address">MDN</a><q cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/address"> el elemento HTML &lt;address&gt; aporta información de contacto.</q> Normalmente puede ser colocado dentro del elemento &lt;footer&gt; de la sección 
+                    </p>
+                    <blockquote>
+                            El elemento HTML &lt;main&gt; representa el contenido principal del &lt;body&gt; de un documento o aplicación. El área principal del contenido consiste en el contenido que está directamente relacionado, o se expande sobre el tema central de un documento o la funcionalidad central de una aplicación. Este contenido debe ser único al documento, excluyendo cualquier contenido que se repita a través de un conjunto de documentos como barras laterales, enlaces de navegación, información de derechos de autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función principal del documento sea un formulario de búsqueda).
+                    </blockquote>
+                    <p>El elemento figure es un contenedor de imágenes del que hablaremos al referirnos a estas</p>
+                </section>
+                <section>
+                    <h3>Otras etiquetas relacionadas con bloques</h3>
+                    <p>la etiqueta la crea una línea horizontal</p>
+                    <br>
+                    <p>la etiqueta br crea un saldo de línea</p>
+                 <br> 
                 </section>
             </section>
         </section>
-        <section>
+        <section id="text-level">
             <header>
                 <h2>Text - level semantics</h2>    
             </header>
+            <section>
+                <h3>Hiperenlaces</h3>
+                <p>La etiqueta a</p>
+                <p>Existen cuatro tipos de url</p>
+                <ul>
+                    <li>Absolutas</li>
+                    <li>Relativas al origen</li>
+                    <li>Relativas al documento</li>
+                    <li>Internas</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Elementos en línea neutros</h3>
+                <p>La etiqueta spam no tiene ningún valor semántico</p>
+                <p>Por ejemplo quiero que la palabra <spam class="verde"> verde </spam> salga de su color</p>
+            </section>
+            <section>
+                <h3>Elementos claramente semánticos</h3>
+                <ul>
+                    <li>strong</li>
+                    <li>em (emphasis)</li>
+                    <li>sup</li>
+                    <li>sub</li>
+                    <li>small</li>
+                </ul>
+                <p>Los superíndices y subindices tienen que ser de uso generalizado y reconocibles</p>
+                <p>H<sub>2</sub>O</p>
+                <p>E=mc<sup>2</sup></p>
+                <p>La etiqueta small introduce información legal o similar, lo que suele llamarse la "letra pequeña"</p>
+            </section>
+            <section>
+                <h3>Elementos con valor semántico nuevo</h3>
+                <ul>
+                    <li>(bold)</li>
+                    <li>(italics)</li>
+                    <li>(underline)</li>
+                    <li>(strike)</li>
+                </ul>
+                <p>b: destacado con fines utilitarios</p>
+                <p>fragmento de texto del que se llama la atención con fines utilitarios sin concederle ninguna importancia extra y sin que implique ningún cambio de tono o de estado de ánimo.</p>
+                <p>E.g. palabras clave en el resumen de un documento, nombres de producto, palabras procesables en el software interactivo orientado a texto…</p>
+                <p>i: calidad diferente de texto, incluyendo 
+                cambio de tono o de estado de ánimo;</p>
+                <p>fragmento de texto que implique un cambio de tono o de estado de ánimo, o cualquier otra desviación de la  prosa normal que en cualquier manera indique una calidad diferente de texto.</p>
+                <p>E.g. una designación taxonómica, un término técnico, una frase idiomática en otro lenguaje, un pensamiento  o un nombre de barco.</p>
+                <p>u: texto escrito de forma incorrecta voluntariamente; nombres propios chinos</p>
+                <p>s: elemento que ya no es correcto o relevante</p>       
+            </section>
+            <section>
+                <h3>Elementos de tipo técnico</h3>
+                <ul>
+                    <li>Samp (sample)</li>
+                    <li>Code (code)</li>
+                    <li>Kbd (keyboard)</li>
+                    <li>Var (variables)</li>
+                    <li>Dfn (definition)</li>
+                    <li>Abbr (abbr)</li>
+                </ul>
+                <p>La etiqueta abbr indica abreviaturas o acrónimos</p>
+            </section>
+            <section>
+                <h3>Uso de referencias y citas</h3>
+                <ul>
+                    <li>q (quote)</li>
+                    <li>cite (cite o referencias)</li>
+                    <p>Película: <cite>El Señor de los Anillos</cite></p>
+                </ul>
+            </section>
+            <section>
+                <h3>Otras etiquetas de HTML5</h3>
+                <ul>
+                    <li>time, e.g. <time datetime="2019-12-06">día de la constitución de este año</time></li>
+                    <li>mark mercado <mark>interactivo</mark></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Edits</h3>
+                <ul>
+                    <li>Ins</li>
+                    <li>Del</li>
+                </ul>
+                <p>Muestran el contenido que se ha insertado (Instead)en lugar de otro, que por tanto se elimina (Deleted).</p>
+                <p> <ins>Esto ya no vale</ins></p> <p> <del>Ahora es así</del> </p> 
+            </section>
         </section>    
     </div>
-    <footer class="main_footer" >
-        <p>LuChiia💜</p>
-        <a href="mailto://luciacsanz@hotmail.com">Enviar correo</a>
+    <footer class="main_footer">
+    <address>
+        <p>LuChiia💜<a href="mailto://luciacsanz@hotmail.com"> Enviar Correo</a></p>
+        <p><small>&copy; Tajamar</small></p>
+    </address>
     </footer>
 </body>
 </html>
