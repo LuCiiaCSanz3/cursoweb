@@ -1,7 +1,7 @@
 body { 
     color: rgba(166, 15, 172, 0.63) ;
     background-color:rgb(234, 247, 179);
-    margin: 0rem;
+    margin: -0.5rem;
     font-family: Calibri;
 }
 
@@ -9,13 +9,35 @@ body {
     background-color:#632A50;
     color: #C2E812 ;
     font-family: calibri;
-    padding: 0.8rem 1rem 0.5rem 0rem;
+    padding: 0.8rem 0rem 0.5rem 2rem;
 }
 
 .main_header p {
-font-size: 1.33rem;
-font-weight: bold;
-margin-top: 1rem;
+    font-size: 1.33rem;
+    font-weight: bold;
+    margin-top: -1rem;
+    margin-bottom: 0;
+}
+
+.main_header nav {
+    margin-left: -1rem;
+}
+
+.main_header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main_header nav li {
+    display: inline-block;
+}
+
+.main_header nav a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
 }
 
 .main_footer {
@@ -91,7 +113,7 @@ footer a {
 }
 
 .verde {
-    color:#C2E812;
+    color: rgb(63, 226, 63);
     font-weight: bold;
     text-decoration: underline;
     text-decoration: line-through;
@@ -101,3 +123,4 @@ strong {
     font-weight: normal;
 }
 */
+
