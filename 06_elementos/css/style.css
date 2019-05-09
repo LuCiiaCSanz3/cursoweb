@@ -54,10 +54,31 @@ body {
 
 .image_wrapper {
     text-align: center;
+    margin: 0;
 }
 
 img{ 
     max-width: 100%;
+    /*width: 100%;*/
+    /*display: inline-block;*/
+}
+
+.sección_imágenes img {
+    max-width: 25%;
+    display: block;
+    float: left;
+}
+
+.image_wrapper_25 {
+    width: 25%;
+}
+
+.image_wrapper_50 {
+    width: 50%;
+}
+
+.image_wrapper_75{
+    width: 75%;
 }
 
 .pre_no_mono  {

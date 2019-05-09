@@ -46,7 +46,49 @@
                     </li>
                     <li>Elementos de navegación gráficos</li>
                 </ul>
-            </section>
+                <section>
+                    <h3>Imágenes</h3> 
+                <div class="sección_imágenes">
+                    <!--<img src="./assets/komodo.jpg" alt="Dragon de komodo que es una isla indonesia, mostrando su lengua bífida">-->
+                    <img src="./assets/varanococodrilo1.png" alt="verano cocodrilo">
+                    <img src="./assets/ardilla.gif" alt="ardilla">
+                    <img srcset="./assets/3boats.webp" src="./assets/3boats.jpg" alt="barcas">
+                </div> 
+                <div class="clearfix"></div>
+                    <p>Uso de imágenes responsivas en HTML</p>
+                <div>
+                    <img 
+                    srcset="
+                           ./assets/komodo.300.jpg 300w,
+                           ./assets/komodo.400.jpg 400w,
+                           ./assets/komodo.500.jpg 500w,
+                           ./assets/komodo.jpg 600w"
+                    sizes="(max-width: 300px),
+                           (max-width: 400px),
+                           (max-width: 500px)"       
+                    src="./assets/komodo.jpg"
+                    alt="Dragon de komodo que es una isla indonesia, mostrando su lengua bífida">
+                </div>
+                <div class="clearfix"></div>
+                    <p>Etiqueta picture</p>
+                <div>
+                    <picture>
+                    <source media="(max-width: 200px)" srcset="./assets/gato-sphynx_opt.100.jpg" type="image/jpg">
+                    <source media="(max-width: 400px)" srcset="./assets/gato-sphynx_opt.300.jpg" type="image/jpg">
+                    <source media="(max-width: 600px)" srcset="./assets/gato-sphynx_opt.500.jpg" type="image/jpg" >
+                    <source srcset="./assets/gato-sphynx.jpg" type="image/jpg">
+                    <img src="./assets/gato-sphynx_opt.500.jpg" alt="Gato egipcio con ojos verdes esmeraldas" type="image/jpg">
+                    </picture>
+                </div>
+                </section>
+                <div class="clearfix"></div>
+                <section>
+                    <h3>Video y audio</h3>
+                </section>
+                <section>
+                    <h3>Elementos de navegación gráficos</h3>
+                </section>
+            </section>    
         </main>
         <aside>
                 <h2>Publicidad</h2>
