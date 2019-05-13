@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio - Elementos de la Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Nova+Script=Stylish" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" >
 </head>
-<body id="Inicio" >
+<body id="Inicio">
     <header class="main_header">
-        <h1> Etiquetas de HTML</h1>
+        <h1> Etiquetas de HTML <i class="fab fa-html5"></i></h1>
         <p>Clasificación de las <strong>etiquetas</strong> según el <strong>estándar HTML 5.2</strong></p>
         <nav>
             <ul>
@@ -17,17 +19,20 @@
                 <li><a href="#grouping" rel="tag">Grouping</a></li>
                 <li><a href="#text-level" rel="tag">Text-Level</a></li>
                 <li><a href="./mmedia.html">Multimedia</a></li>
+                <li><a href="./datos.html#tablas">Tablas</a></li>
+                <li> <a href="./datos.html#formularios">formularios</a></li>
             </ul>
         </nav>
     </header>
     <div class="content_wrapper">
         <main>
-        <p>El estándar de <abbr title="HyperText Markup language">
-            <a href="https://www.w3.org/TR/html52/" rel="external" target="_black">HTML
-            </abbr></a> diferencia inicialmente tres tipos diferentes de
+        <p>El estándar de <abbr title="HyperText Markup language"></abbr></p>
+            <a href="https://www.w3.org/TR/html52/" rel="external" target="black">HTML
+            </a> diferencia inicialmente tres tipos diferentes de
             <strong>etiquetas</strong>:
-            <spam lang="en">Sections, Grouping content y Text-level semantics</spam> 
-        </p>
+            <spam lang="en">
+                <p>Sections, Grouping content y Text-level semantics</p>
+            </spam> 
         <section id="sections_elements">
             <header>
                 <h2 lang="en">Sections Elements</h2>    
@@ -50,7 +55,7 @@
                     <footer>
                         <cite>
                             <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section" rel="external">
-                                https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section
+                                https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/section
                             </a>
                         </cite>
                     </footer>
@@ -62,7 +67,7 @@
                     <footer>
                         <cite>
                             <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header" rel="external">
-                                https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header
+                                https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/header
                             </a>   
                         </cite>
                     </footer>
@@ -74,7 +79,7 @@
                     <footer>
                         <cite>
                             <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer" rel="external">
-                                https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer
+                                https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/footer
                             </a>
                         </cite>
                     </footer>
@@ -86,7 +91,7 @@
                     <footer>
                         <cite>
                             <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav" rel="external">
-                                https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header
+                                https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/nav
                             </a>
                         </cite>
                     </footer>
@@ -98,8 +103,8 @@
                     El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en un documento,página, una aplicación o en el sitio, que se destina a distribuir de forma <em>independiente o reutilizable</em> ,por ejemplo, en la sindicación.Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido.
                     <footer>
                         <cite>
-                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/article" rel="external">
-                                https://developer.mozilla.org/es/docs/Web/HTML/Elemento/article
+                            <a class="palabra_rota" href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/article" rel="external">
+                                https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/article
                             </a>
                         </cite>
                     </footer>
@@ -112,7 +117,7 @@
                     <footer>
                         <cite>
                             <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/aside" rel="external">
-                                https://developer.mozilla.org/es/docs/Web/HTML/Elemento/aside</a>
+                                https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/aside</a>
                         </cite>
                     </footer>
                 </blockquote>
@@ -126,7 +131,9 @@
               </figcaption>
             </figure>
             <footer>
-                <a href="#Inicio">Inicio</a>
+                <a href="#Inicio" rel="tag" title="Inicio">
+                    <i class="fas fa-home"></i>
+                </a>
             </footer>
         </section>
         <section id="grouping" >
@@ -214,7 +221,9 @@
                 </section>
             </section>
             <footer>
-                <a href="#Inicio">Inicio</a>
+                <a href="#Inicio" rel="tag" title="Inicio">
+                    <i class="fas fa-home"></i>
+                </a>
             </footer>
         </section>
         <section id="text-level">
@@ -235,7 +244,7 @@
             <section>
                 <h3>Elementos en línea neutros</h3>
                 <p>La etiqueta spam no tiene ningún valor semántico</p>
-                <p>Por ejemplo quiero que la palabra <spam class="verde"> verde </spam> salga de su color</p>
+                <p>Por ejemplo quiero que la palabra <spam class="verde"> verde</spam> salga de su color</p>
             </section>
             <section>
                 <h3>Elementos claramente semánticos</h3>
@@ -286,7 +295,7 @@
                 <ul>
                     <li>q (quote)</li>
                     <li>cite (cite o referencias)</li>
-                    <p>Película: <cite>El Señor de los Anillos</cite></p>
+                    <li>Película: <cite>El Señor de los Anillos</cite></li> 
                 </ul>
             </section>
             <section>
@@ -305,8 +314,10 @@
                 <p>Muestran el contenido que se ha insertado (Instead)en lugar de otro, que por tanto se elimina (Deleted).</p>
                 <p><del>Esto ya no vale</del></p><p><ins>Ahora es así</ins></p> 
             </section>
-            <footer>
-                <a href="#Inicio">Inicio</a>
+            <footer class="main_section_footer">
+                <a href="#Inicio" rel="tag" title="Inicio">
+                    <i class="fas fa-home"></i>
+                </a>     
             </footer>
         </section>
         </main>
@@ -315,11 +326,6 @@
             <p>Aquí iría la publicidad</p>
         </aside>   
     </div>
-    <footer class="main_footer">
-    <address>
-        <p>LuChiia💜<a rel="author" href="mailto://luciacsanz@hotmail.com"> Enviar Correo</a></p>
-        <p><small>&copy; Tajamar</small></p>
-    </address>
-    </footer>
+   <iframe class="iframe_footer" src="./_footer.html"></iframe>
 </body>
 </html>
