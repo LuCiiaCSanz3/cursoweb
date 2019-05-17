@@ -280,3 +280,10 @@ fieldset {
 .form_control::-ms-input-placeholder { /* Microsoft Edge */
     color: rgba(166, 15, 172, 0.63);
   }
+
+.canvas {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #632A50;
+    background-color: #C2E812;
+}

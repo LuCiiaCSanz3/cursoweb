@@ -1,0 +1,22 @@
+{
+  "name": "cursoweb",
+  "version": "1.0.0",
+  "description": "Curso Web Primer Repositorio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuCiiaCSanz3/cursoweb.git"
+  },
+  "author": "lucia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuCiiaCSanz3/cursoweb/issues"
+  },
+  "homepage": "https://github.com/LuCiiaCSanz3/cursoweb#readme",
+  "dependencies": {
+    "dialog-polyfill": "^0.5.0"
+  }
+}
