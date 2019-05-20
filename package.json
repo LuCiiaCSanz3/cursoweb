@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/LuCiiaCSanz3/cursoweb#readme",
   "dependencies": {
-    "dialog-polyfill": "^0.5.0"
+    "dialog-polyfill": "^0.5.0",
+    "normalize.css": "^8.0.1"
   }
 }
