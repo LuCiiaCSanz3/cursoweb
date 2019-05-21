@@ -3,7 +3,7 @@
 Estilos del Header
 ***************/
 
-header{
+body>header{
     background-color: aquamarine;
     color: rgb(248, 200, 142);
     padding-bottom: 2rem;
@@ -11,11 +11,11 @@ header{
     padding-left: 5rem;
 }
 
-    header h1 {
+    body>header h1 {
         margin-top: 0;
         margin-bottom: 0;
     }
-    header p {
+    body>header p {
         margin-top: 0;
         margin-bottom: 0;
         font-size: 1.5rem;
@@ -49,31 +49,170 @@ section.combinadores div+p {
     background-color: deeppink;
 }
 
+/**********************************
+Estilos de la sección de .atributos
+**********************************/
+
 /*Selector de atributo - simbolo []*/
-[title] {
+.atributos [title] {
     color: crimson;
 }
 
 /* Atributo igual a */
-[title="Extra"] {
+.atributos [title="Extra"] {
     color: darkblue;
 }
 
 /* Atributo empieza por */
-[title^="Par"] {
+.atributos [title^="Par"] {
     color: darkgoldenrod;
 }
 
 /* Atributo contiene */
-[title*="rraf"] {
+.atributos [title*="rraf"] {
     color: darkmagenta;
 }
 
 /* Atributo termina por */
-[title$="1"] {
+.atributos[title$="1"] {
     color: gold;
 }
 
+/*****************************************************
+Estilos de la secciones .pseudo-elementos, .numerados y .comillas
+******************************************************/
+
+.pseudo-elementos p::first-letter {
+    font-size: 2.5rem;
+    font-family: 'Fantasy';
+    color: blue;
+}
+
+.pseudo-elementos p::first-line {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.pseudo-elementos .medio,{
+    color: cornflowerblue;
+}
+
+
+.pseudo-elementos .medio-pro::before,
+.pseudo-elementos .medio-pro::after 
+{
+    content: url(../../favicon.ico)url(../../favicon.ico) "FANTASTICO" url(../../favicon.ico)url(../../favicon.ico);
+    display: block;
+    background-color: darkmagenta;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.banda {
+    background-color: darkmagenta;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    }
+
+body {
+    counter-reset: parrafos;
+}
+
+.numerados p::before {
+    counter-increment: parrafos;
+    content: counter(parrafos,  armenian) " - ";
+    font-weight: bold;
+}
+
+.comillas {
+    quotes: "\00AB;" "\00BB;";
+}
+
+.comillas p::before {
+    content: open-quote;
+}
+
+.comillas p::after {
+    content: close-quote;
+}
+
+/*****************************************************
+Estilos de la secciones .pseudo-clases...
+******************************************************/
+
+.pseudo-clases header {
+    background-color: bisque;
+    padding-bottom: 1rem;
+}
+
+.pseudo-clases header h2 {
+    margin-bottom: 0.2rem;
+}
+
+.pseudo-clases header p {
+    display: none;
+}
+
+.pseudo-clases header:hover {
+    background-color: coral;
+}
+
+.pseudo-clases header:hover p {
+    display: initial;
+    padding: 1rem;
+}
+
+.pseudo-clases a:link {
+    color: blue;
+}
+
+.pseudo-clases a:visited {
+    color: blueviolet;
+}
+
+.pseudo-numericas p:nth-child(2) {
+    text-decoration: underline;
+}
+
+.pseudo-numericas p:nth-of-type(2) {
+    font-style: italic;
+}
+
+/* .pseudo-numericas li::nth-of-type(even) */
+.pseudo-numericas li:nth-of-type(2n) {
+    background-color: bisque;
+}
+
+/* .pseudo-numericas li::nth-of-type(odd) 
+.pseudo-numericas li:nth-of-type(2n+1) {
+    background-color: darkcyan;
+}*/
+
+.pseudo-numericas li {
+    font-family: monospace;
+    width: 4rem;
+    /*padding-right: 2rem;*/
+    
+}
+
+.pseudo-numericas li:nth-of-type(3n) {
+    background-color: lightcoral;
+}
+
+.pseudo-numericas li:nth-of-type(3n+1){
+    background-color: cadetblue;
+}
+
+.pseudo-numericas li:nth-of-type(3n+2){
+    background-color: lightpink;
+}
+
+
+/*.pseudo-numericas li:last-of-type {
+    padding-right: 1.5rem;
+}*/
 
 
 
@@ -81,19 +220,25 @@ section.combinadores div+p {
 Estilos del Footer
 ***************/
 
-footer{
+body>footer{
     background-color: aquamarine;
     color: rgb(248, 186, 110);
     padding-bottom: 1rem;
     padding-top: 1rem;
     text-align: center;
+    margin-top: 1rem;
 }
 
-footer address {
+body>footer address {
     font-style: normal;
 }
 
-footer p {
+body>footer p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+/* :not(h1) {
+    text-transform: uppercase;
+}*/
+
