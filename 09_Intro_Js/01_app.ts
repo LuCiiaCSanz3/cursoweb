@@ -18,6 +18,7 @@ true // Tipo boolean
 // Tipado estático o dinámico
 
 // En TypeScript el tipado puede ser fuerte y estático
+{
 let b: number // Tipo number, sin valor
 b = 3
 /*b = 'pepe' Error de tipos */
@@ -27,3 +28,4 @@ b = 3
 let precio = 45.60
 let producto = 'Gafas'
 // precio = producto error de tipos
+}
