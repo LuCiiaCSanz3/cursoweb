@@ -6,6 +6,40 @@
 
 }
 
+@font-face {
+    font-family: 'Achaflft';
+    src: url('../assets/Achaflft.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-    font-family: "quicksandbold"
+    font-family: "Achaflft";
+}
+
+h1 {
+    font-family: "quicksandbold";
+    padding: 1rem;
+
+}
+
+.content_wrapper {
+    font-size: 1.1rem;
+}
+
+section.centrada {
+    width: 83.8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+p {
+    border: 1px solid;
+    padding: 1em;
+} 
+
+.margenes {
+    display: flex;
 }
