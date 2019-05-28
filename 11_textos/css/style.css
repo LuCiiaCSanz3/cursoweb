@@ -14,14 +14,22 @@
 
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Achaflft";
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-family: "quicksandbold";
-    padding: 1rem;
-
+    font-size: 4rem;
+    padding: 1rem 2rem;
+    border: 2px solid palevioletred;
+    border-radius: 20px;
 }
 
 .content_wrapper {
@@ -40,6 +48,75 @@ p {
     padding: 1em;
 } 
 
-.margenes {
-    display: flex;
+.espacios {
+    margin: 2rem 1rem;
+    background-color: palevioletred;
+    padding-bottom: 5%;
+}
+
+.espacios h2 {
+    padding: 1rem;
+    margin: 0;
+}
+
+.espacios p {
+    padding: 1rem;
+    background-color: aqua;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.flex {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: palevioletred;
+    padding: 1rem;
+}
+
+.flex h2 {
+    padding: 1rem;
+    margin: 0;
+}
+
+
+.flex p {
+    padding: 1rem;
+    background-color: aqua;
+}
+
+
+@media screen and (min-width: 690px) {
+    .espacios p {
+        width: 30%;
+        float: left;
+        box-shadow: 5px 5px 5px 5px yellowgreen;
+    }
+    
+    .espacios p:not(last-of-type) {
+        margin-right: 0;
+    }
+
+    .espacios::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .flex p {
+        box-shadow: 5px 5px 5px 5px yellowgreen;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    
+    .flex p:last-of-type {
+        margin-right: 0;
+    }
+
+    .flex .flex-wrapper {
+        display: flex;
+    }
+
+    .flex h2 {
+        text-shadow: 5px 5px 5px yellowgreen;
+    }
 }
