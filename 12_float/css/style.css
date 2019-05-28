@@ -1,0 +1,34 @@
+main {
+    margin: 5%;
+}
+
+section.reptiles:after {
+    content:'';
+    display: block;
+}
+
+.img_wrapper-left {
+    width: 50%;
+    float: left;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img_wrapper-right {
+    width: 50%;
+    float: right;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    
+}
