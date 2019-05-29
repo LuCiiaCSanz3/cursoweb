@@ -42,6 +42,14 @@ function sumar(a = 0, b = 0) {
     return a + b
 }
 
+function isValidNumber(n) {
+    r = true
+    if (isNaN(n) || typeof n == 'boolean'
+    || Array.isArray(n) ) {
+        r = false
+    }
+    return    
+}
 
 function sumar(a = 0, b = 0) {
     if (isNaN(a) || isNaN (b) 

@@ -17,6 +17,7 @@ w = undefined
 w = null
 w = 0
 w = ''
+w = NaN
 
 // True
 w = true
@@ -66,5 +67,68 @@ if (q === 0) {
 let a = 4
 let b = '4'
 
-(a == b) // true
-(a === b) // false
+console.log(a == b) // true
+console.log(a === b) // false
+
+let nota = 0
+
+if (!nota) {
+//if (nota != true) {
+//if (nota == 0){
+    console.log('Has sacado la nota minima')
+}
+
+let b1 = Boolean(nota)
+b1 = !nota
+
+let edad = 24
+
+function comprobarEdad (edad) {
+    let i = 3
+    let mensajes = [
+    'Eres menor de edad',
+    'Eres joven',
+    'Empieza a tener cuidado',
+    'Lo siento por ti'
+]
+    if (edad < 18) {
+        i = 0
+    } else if (edad < 35) {
+        i = 1
+    } else if (edad < 50) {
+        i = 2
+    } /*else {
+        i = 3
+    }  */
+    console.log(`Con ${edad} años`, mensajes[i])
+}
+
+/*let e = 53
+comprobarEdad(e)*/
+
+/** separacion de responsabilidades */
+
+function codificaEdad(edad) {
+    let i = 3
+    if (edad < 18) {
+        i = 0
+    } else if (edad < 35) {
+        i = 1
+    } else if (edad < 50) {
+        i = 2
+    }
+    return i
+}
+function responderSegunEdad (edad) {
+    let mensajes = [
+        'Eres menor de edad',
+        'Eres joven',
+        'Empieza a tener cuidado',
+        'Lo siento por ti'
+    ]
+    console.log(`Con ${edad} años`, 
+            mensajes[codificaEdad(edad)])
+}
+
+let e = 25
+responderSegunEdad(e)
