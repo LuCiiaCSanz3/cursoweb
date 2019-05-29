@@ -1,3 +1,12 @@
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
 main {
     margin: 5%;
 }
@@ -10,8 +19,8 @@ section.reptiles:after {
 .img_wrapper-left {
     width: 50%;
     float: left;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 img {
@@ -21,14 +30,80 @@ img {
 .img_wrapper-right {
     width: 50%;
     float: right;
-    padding-left: 1rem;
-    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    color: #32908F;
 }
 
 img {
     max-width: 100%;
+    /*display: block;*/
+    vertical-align: bottom;
 }
 
-footer {
-    
+aside {
+    padding-left: 2rem;
+    text-align: center;
 }
+
+aside:before,
+aside::after {
+    content: '';
+    display: block;
+    padding: 0.5rem;
+    background-color: #32908F;
+    opacity: 0.6rem;
+}
+
+
+header, footer {
+    background-color: salmon;
+    color: rgb(147, 243, 3);
+    text-align: center;
+}
+
+header h1, footer {
+    line-height: 5rem;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header p {
+    padding-bottom: 1rem;
+    visibility: hidden;
+    /*display: none;*/
+}
+
+header:hover p {
+    visibility: initial;
+   /*display: inherit;*/
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: georgian;
+}
+
+.table_wrapper-right {
+    float: right;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+}
+
+.table_wrapper-right:hover table {
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+td {
+    padding: 0.5rem 0.5rem;
+    border: 1px solid salmon;
+    text-align: center;
+}
+
+
+
