@@ -1,1 +1,32 @@
-body {color: rgb(161, 3, 182)}
+body {
+    display: block;
+}
+
+h1 {
+    background-color: #5CFF1C;
+    color:  #FF2C1C;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.imagenes {
+    max-width: 50%;
+    display: block;
+    float: left;
+
+}
+
+.img_wrapper {
+    width: 100%;
+}
+
+.main_footer {
+    font-family: Georgia;
+    background-color: #93748A;
+    color: rgb(170, 248, 230);
+    text-align: center;
+    padding: 1rem;
+}
