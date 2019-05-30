@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+header {
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    /*background-image: url(../assets/img-noise-52x32.png);*/
+    background-image: url(../assets/schwedagon_pano_for_ng_1000x622.jpg);
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    background-blend-mode: lighten;
+}
+
+h1 {
+    color: white;
+}
