@@ -1,0 +1,87 @@
+
+.gama {
+    display: flex;
+}
+
+.gama div {
+    color: aquamarine;
+    height: 10rem;
+    width: 10rem;
+}
+
+.gama div:nth-last-of-type(1) {
+   /*background-color: #FF2C1C;*/
+   background-color: rgba(255, 44, 28, 0.7);
+}
+
+.gama div:nth-last-of-type(2) {
+    background-color: #EB8134;
+}
+
+.gama div:nth-last-of-type(3) {
+    background-color: #FFC533;
+}
+
+.gama div:nth-last-of-type(4) {
+    background-color: #EBE32D;
+}
+
+.gama div:nth-last-of-type(5) {
+    background-color: #5CFF1C;
+}
+
+.transp {
+    display: flex;
+    margin: 1rem;
+    border: 1px solid;
+    padding: 1rem;
+    width: 90%;
+    height: 10vh;
+    background-color: salmon;
+}
+
+.transp div {
+    height: 10rem;
+    width: 10rem;
+    background-color: aquamarine;
+}
+
+.transp div:nth-of-type(2) {
+    background-color: rgba(127, 255, 212, 0.644);
+}
+.transp p {
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.opaciti {
+    margin-top: 8rem;
+    opacity: 0;
+}
+
+.opaciti:hover {
+    opacity: 1;
+}
+
+.fondo {
+    /*background-color: rgba(0, 139, 139, 0.6);*/
+    opacity: 0.5;
+    background-image: url(../assets/schwedagon_pano_for_ng_1000x622.jpg)
+}
+
+.fondo h2 {
+    opacity: initial;
+}
+
+.gradiento {
+    text-align: center;
+    color: whitesmoke;
+    background: violet;
+    background: linear-gradient(to right, rgba(114,242,221,1) 0%, rgba(216,98,245,1) 31%, rgba(98,176,245,1) 67%, rgba(255,92,184,1) 100%); 
+    /*background: linear-gradient(
+        to right,
+        #EBE32D,#5CFF1C,#FF2C1C*/
+     /*background: radial-gradient(ellipse at center, rgba(103,233,250,1) 0%, rgba(103,233,250,1) 3%, rgba(168,250,243,1) 34%, rgba(138,252,207,1) 72%, rgba(138,252,207,1) 72%, rgba(125,255,155,1) 96%, rgba(125,255,155,1) 100%);*/  
+    
+}
