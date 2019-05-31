@@ -8,7 +8,7 @@ header {
     justify-content: center; /*horizontal*/
     align-items: center; /*vertical*/
     /*background-image: url(../assets/img-noise-52x32.png);*/
-    background-image: url(../assets/schwedagon_pano_for_ng_1000x622.jpg);
+    background-image: url(../assets/microsoft-interes-linkedin-kGnE--620x349@abc.jpg);
     background-color: red;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,6 +16,40 @@ header {
     background-blend-mode: lighten;
 }
 
-h1 {
+/*h1 {
     color: white;
+}*/
+
+h1 span {
+    /*display: none;*/
+    color: rgba(255, 255, 255, 0);
+}
+
+.content_wrapper {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    color: white;
+}
+
+.content_wrapper section:nth-last-of-type(1) {
+    background-image: url(../assets/img-noise-150x150.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.content_wrapper section:nth-last-of-type(2) {
+    background-image: url(../assets/img-noise-150x150.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.main_footer {
+    font-family: Georgia;
+    background-color: rgb(245, 45, 45);
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
