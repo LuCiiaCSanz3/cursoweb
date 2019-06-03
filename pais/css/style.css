@@ -1,0 +1,107 @@
+
+/* fondo de color para el titulo y footer
+Fondo : gradiente lineal (al fondo, rgba (171,219,237,1) 0%, rgba (178,247,232,1) 31%, rgba (250,173,209,1) 70%, rgba (238,186,255,1) 100%);
+filter : progid: DXImageTransform.Microsoft.gradient (startColorstr = '# abdbed', endColorstr = '# eebaff', GradientType = 0);
+*/
+
+
+/* mi paleta de colores:
+-#E8D7F1 lila body
+-#B5E2FA azul titulo grande
+-#EBF8B8 amarillo
+-#EDAFB8 rosa
+-#BAFFDF verde
+
+*/
+* {
+    box-sizing: border-box;
+   
+}
+
+@font-face {
+    font-family: 'Bigdey Demo.ttf';
+    src: url('../assets/Bigdey\ Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Supernova.ttf';
+    src: url('../assets/Supernova.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    line-height: 1;
+    font-family: 'Supernova.ttf';
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    min-height: 100vh;
+    color:#E8D7F1;
+    justify-content: center;
+    background-image: url(../assets/paris\ desde\ el\ cielo\ .jpg);
+    margin: 0;
+}
+
+
+
+.main_header {
+    font-family: 'Bigdey Demo.ttf';
+    background-image: url(../assets/nubes\ de\ ensueño.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: initial;
+    color: #B5E2FA;
+    padding: 0.8rem 0rem 0.5rem 2rem;
+}    
+    .main_header h1 {
+        font-size: 8rem;
+    }
+
+    .main_header p {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: -1rem;
+        margin-bottom: 0;
+    }
+
+h2 {
+    color: #EDAFB8;
+}
+
+h3 {
+    color: #BAFFDF;
+}
+h4 {
+    color: #EBF8B8;
+}
+
+figcaption {
+    color: #EBF8B8;
+}
+
+.iframe_footer {
+    width: 100%;
+    height: 20vh;
+    border: none;
+    background-color: #EDAFB8;
+}
+
+.main_footer {
+    font-family: 'Supernova.ttf';
+    color: #B5E2FA;
+    background-color: #EDAFB8; 
+    text-align: center;
+    padding: 1rem;
+}
+.web_externa {
+    width: 100%;
+    height: 60vh;
+}
+
+
+    

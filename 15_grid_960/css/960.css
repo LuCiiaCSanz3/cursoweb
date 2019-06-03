@@ -133,18 +133,15 @@ body {
   /* `Prefix Extra Space >> Global
   ----------------------------------------------------------------------------------------------------*/
   
-  .container_12 .prefix_3,
-  .container_16 .prefix_4 {
+  .container_12 .prefix_3,{
     padding-left: 240px;
   }
   
-  .container_12 .prefix_6,
-  .container_16 .prefix_8 {
+  .container_12 .prefix_6, {
     padding-left: 480px;
   }
   
-  .container_12 .prefix_9,
-  .container_16 .prefix_12 {
+  .container_12 .prefix_9,{
     padding-left: 720px;
   }
   
@@ -183,74 +180,6 @@ body {
     padding-left: 880px;
   }
   
-  /* `Prefix Extra Space >> 16 Columns
-  ----------------------------------------------------------------------------------------------------*/
-  
-  .container_16 .prefix_1 {
-    padding-left: 60px;
-  }
-  
-  .container_16 .prefix_2 {
-    padding-left: 120px;
-  }
-  
-  .container_16 .prefix_3 {
-    padding-left: 180px;
-  }
-  
-  .container_16 .prefix_5 {
-    padding-left: 300px;
-  }
-  
-  .container_16 .prefix_6 {
-    padding-left: 360px;
-  }
-  
-  .container_16 .prefix_7 {
-    padding-left: 420px;
-  }
-  
-  .container_16 .prefix_9 {
-    padding-left: 540px;
-  }
-  
-  .container_16 .prefix_10 {
-    padding-left: 600px;
-  }
-  
-  .container_16 .prefix_11 {
-    padding-left: 660px;
-  }
-  
-  .container_16 .prefix_13 {
-    padding-left: 780px;
-  }
-  
-  .container_16 .prefix_14 {
-    padding-left: 840px;
-  }
-  
-  .container_16 .prefix_15 {
-    padding-left: 900px;
-  }
-  
-  /* `Suffix Extra Space >> Global
-  ----------------------------------------------------------------------------------------------------*/
-  
-  .container_12 .suffix_3,
-  .container_16 .suffix_4 {
-    padding-right: 240px;
-  }
-  
-  .container_12 .suffix_6,
-  .container_16 .suffix_8 {
-    padding-right: 480px;
-  }
-  
-  .container_12 .suffix_9,
-  .container_16 .suffix_12 {
-    padding-right: 720px;
-  }
   
   /* `Suffix Extra Space >> 12 Columns
   ----------------------------------------------------------------------------------------------------*/
@@ -287,72 +216,19 @@ body {
     padding-right: 880px;
   }
   
-  /* `Suffix Extra Space >> 16 Columns
-  ----------------------------------------------------------------------------------------------------*/
-  
-  .container_16 .suffix_1 {
-    padding-right: 60px;
-  }
-  
-  .container_16 .suffix_2 {
-    padding-right: 120px;
-  }
-  
-  .container_16 .suffix_3 {
-    padding-right: 180px;
-  }
-  
-  .container_16 .suffix_5 {
-    padding-right: 300px;
-  }
-  
-  .container_16 .suffix_6 {
-    padding-right: 360px;
-  }
-  
-  .container_16 .suffix_7 {
-    padding-right: 420px;
-  }
-  
-  .container_16 .suffix_9 {
-    padding-right: 540px;
-  }
-  
-  .container_16 .suffix_10 {
-    padding-right: 600px;
-  }
-  
-  .container_16 .suffix_11 {
-    padding-right: 660px;
-  }
-  
-  .container_16 .suffix_13 {
-    padding-right: 780px;
-  }
-  
-  .container_16 .suffix_14 {
-    padding-right: 840px;
-  }
-  
-  .container_16 .suffix_15 {
-    padding-right: 900px;
-  }
   
   /* `Push Space >> Global
   ----------------------------------------------------------------------------------------------------*/
   
-  .container_12 .push_3,
-  .container_16 .push_4 {
+  .container_12 .push_3, {
     left: 240px;
   }
   
-  .container_12 .push_6,
-  .container_16 .push_8 {
+  .container_12 .push_6, {
     left: 480px;
   }
   
-  .container_12 .push_9,
-  .container_16 .push_12 {
+  .container_12 .push_9, {
     left: 720px;
   }
   
@@ -391,72 +267,18 @@ body {
     left: 880px;
   }
   
-  /* `Push Space >> 16 Columns
-  ----------------------------------------------------------------------------------------------------*/
-  
-  .container_16 .push_1 {
-    left: 60px;
-  }
-  
-  .container_16 .push_2 {
-    left: 120px;
-  }
-  
-  .container_16 .push_3 {
-    left: 180px;
-  }
-  
-  .container_16 .push_5 {
-    left: 300px;
-  }
-  
-  .container_16 .push_6 {
-    left: 360px;
-  }
-  
-  .container_16 .push_7 {
-    left: 420px;
-  }
-  
-  .container_16 .push_9 {
-    left: 540px;
-  }
-  
-  .container_16 .push_10 {
-    left: 600px;
-  }
-  
-  .container_16 .push_11 {
-    left: 660px;
-  }
-  
-  .container_16 .push_13 {
-    left: 780px;
-  }
-  
-  .container_16 .push_14 {
-    left: 840px;
-  }
-  
-  .container_16 .push_15 {
-    left: 900px;
-  }
-  
   /* `Pull Space >> Global
   ----------------------------------------------------------------------------------------------------*/
   
-  .container_12 .pull_3,
-  .container_16 .pull_4 {
+  .container_12 .pull_3,{
     left: -240px;
   }
   
-  .container_12 .pull_6,
-  .container_16 .pull_8 {
+  .container_12 .pull_6,{
     left: -480px;
   }
   
-  .container_12 .pull_9,
-  .container_16 .pull_12 {
+  .container_12 .pull_9, {
     left: -720px;
   }
   
@@ -495,56 +317,6 @@ body {
     left: -880px;
   }
   
-  /* `Pull Space >> 16 Columns
-  ----------------------------------------------------------------------------------------------------*/
-  
-  .container_16 .pull_1 {
-    left: -60px;
-  }
-  
-  .container_16 .pull_2 {
-    left: -120px;
-  }
-  
-  .container_16 .pull_3 {
-    left: -180px;
-  }
-  
-  .container_16 .pull_5 {
-    left: -300px;
-  }
-  
-  .container_16 .pull_6 {
-    left: -360px;
-  }
-  
-  .container_16 .pull_7 {
-    left: -420px;
-  }
-  
-  .container_16 .pull_9 {
-    left: -540px;
-  }
-  
-  .container_16 .pull_10 {
-    left: -600px;
-  }
-  
-  .container_16 .pull_11 {
-    left: -660px;
-  }
-  
-  .container_16 .pull_13 {
-    left: -780px;
-  }
-  
-  .container_16 .pull_14 {
-    left: -840px;
-  }
-  
-  .container_16 .pull_15 {
-    left: -900px;
-  }
   
   /* `Clear Floated Elements
   ----------------------------------------------------------------------------------------------------*/
@@ -565,9 +337,7 @@ body {
   .clearfix:before,
   .clearfix:after,
   .container_12:before,
-  .container_12:after,
-  .container_16:before,
-  .container_16:after {
+  .container_12:after, {
     content: '.';
     display: block;
     overflow: hidden;
@@ -579,8 +349,7 @@ body {
   }
   
   .clearfix:after,
-  .container_12:after,
-  .container_16:after {
+  .container_12:after, {
     clear: both;
   }
   
@@ -590,7 +359,6 @@ body {
   */
   
   .clearfix,
-  .container_12,
-  .container_16 {
+  .container_12, {
     zoom: 1;
   }
