@@ -1,24 +1,24 @@
 /**
  * JSDoc
  * @description Programa que calcula y muestra 
- *              si un numero es par o impar
+ *              si un número es par o impar
  */
 
 /**
- * @description función comprueba si una expresión
- *              es convertible a un número válido 
- *              rechazando arrays, booleans, null, 
- *              undefined, '' y string no numéricos
+ * @description Función que comprueba si una expresión 
+ *      es convertible a un número valido
+ *      rechazando objects, arrays, booleans, null 
+ *      undefined, '' y string no numéricos
  * @param {any} n 
  * @returns {boolean}
- */
+ */ 
 function isValidNumber(n) {
     let r = true
-    if (isNaN(n) || typeof n == 'boolean'
-    || Array.isArray (n) || n === '' || n === null ) {
+    if ( isNaN(n) || typeof n == 'boolean' 
+    || Array.isArray(n) || n === ''  || n === null) {
         r = false
     }
-    return  r 
+    return r
 }
 
 /**
@@ -26,27 +26,30 @@ function isValidNumber(n) {
  * @param {number} n 
  * @returns {boolean}
  */
-
- function isEntero(n = 0) {
-     return (parseIn)
- }
+function isEntero( n = 0) {
+     return (parseInt(n) === parseFloat(n))
+}
 
  /**
-  * @description Función que calcula si un numero es par
-  *         puede devolver: -2, -1, true,
+  * @description Función que calcula si un número es par
+  *     Puede devolver: -2, -1, true, false
   * @param {number}: n
   * @returns {boolean}
+  * 
   */
-
   function esPar(n) {
-    let r = true
+    let r = true 
     if (!isValidNumber(n)) {
-        // excepción: n no es un número
-        return -2
-    } else id (!isValidNumber(n)) {
-        // excepción: n no es entero
-        return -1
-    } else if (n%2) {
+        // Excepción: n no es un número
+        //throw 1 // antes -2
+        const error = new Error(`${n} no es un número`)
+        error.numero = 1
+        throw error
+    } else if (!isEntero(n)) {
+        // Excepción: n no es entero
+        // throw 0 // antes -1
+        throw new Error(`El número ${n} no es entero`) 
+    } else if (n%2)  {
         r = false
     }
     return r
@@ -54,39 +57,55 @@ function isValidNumber(n) {
 
 
   /**
-   * @description Función que muestra si un numero es par o impar
+   * @description Función que muestra si un número es par o impar
    * @param {number}: n
-   * @returns (void)
+   * @returns {void}
    */
-
    function mostrar(n) {
+       let output = ''
        let mensajes = [
            `El número ${n} es impar`,
-           `El número ${n} es par`
-           `El número ${n} no es entero`
+           `El número ${n} es par`,
        ]
-       let i = Number(esPar(n))
-       if (i<0)
-       i = -1 +1  
+       let excepciones = [
+            `El número ${n} no es entero`,
+           `${n} no es un número`
+       ]
+       try {
+           let i = Number(esPar(n))   //i: 0, 1
+           output = mensajes[i]
+       } catch (error) { // error: -2 -1
+            // i = -error + 1 // -1 -> 2 // -2 -> 3
+            output = excepciones[error.numero]
+            //output = error.message
+       }
+       console.log(output)
    }
 
-console.log(mensajes[i])
-
-   function probar () {
-       let x
-       x = 1
-       x = 2
-       x = 345
-       x = 98
-       x = 0
-       x = -4
-       x = -5
-       x = 
-       //mostrar(x)
-       console.log(isEntero(x))
-   }
-
-   //probar()
-
+  /*   
+    Gestión de errores
+    const x = 67
+    let z = 45
+    try {
+        x = 51 // => un throw
+        // throw 'Probando un error'
+        z = z + x
+        console.log('z vale', z)
+    } catch (e) {
+        console.log('Disculpa, se ha producido un error')
+        if(e.name) {
+            console.log(e.name, e.message)
+        } else {
+            console.log(e)
+        }
+    }
+    console.log('x vale',x)
+ */
    
-  
+
+
+mostrar('pepe')
+mostrar('2.4')
+    
+exports.esPar = esPar;
+exports.mostrar = mostrar
