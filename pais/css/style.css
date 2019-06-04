@@ -42,15 +42,18 @@ body{
     min-height: 100vh;
     color:#E8D7F1;
     justify-content: center;
-    background-image: url(../assets/paris\ desde\ el\ cielo\ .jpg);
+    background-image: url(../assets/paris_desde_el_cielo_-bicubic.jpg);
     margin: 0;
 }
 
 
+header{
+    display: block;
+}
 
 .main_header {
     font-family: 'Bigdey Demo.ttf';
-    background-image: url(../assets/nubes\ de\ ensueño.jpg);
+    background-image: url(../assets/nubes\ de\ ensueño\ 3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,16 +61,59 @@ body{
     color: #B5E2FA;
     padding: 0.8rem 0rem 0.5rem 2rem;
 }    
+
     .main_header h1 {
-        font-size: 8rem;
+        font-size: 5rem;
+        display: block;
+        margin-block-start: 1rem;
+        margin-block-end: 1rem;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        
     }
 
     .main_header p {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: bold;
         margin-top: -1rem;
         margin-bottom: 0;
     }
+
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .main_header nav {
+        margin-left: -1rem;
+    }
+    .main_header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .main_header nav li {
+        display: inline-block;
+    }
+    .main_header nav a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 1rem;
+    }
+    
+  
+ul {
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
 
 h2 {
     color: #EDAFB8;
@@ -91,12 +137,18 @@ figcaption {
     background-color: #EDAFB8;
 }
 
+
+
+
+
+
 .main_footer {
     font-family: 'Supernova.ttf';
-    color: #B5E2FA;
-    background-color: #EDAFB8; 
+    color:  rgb(74, 153, 196);
+    background-color: rgb(255, 181, 192); 
     text-align: center;
     padding: 1rem;
+    display: block;
 }
 .web_externa {
     width: 100%;
