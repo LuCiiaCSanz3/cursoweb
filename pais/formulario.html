@@ -52,10 +52,8 @@
                                 <option>Comercial</option>
                                 <option>Otros</option>
                             </optgroup>
-                            <label for="email" class="form_label">
-                                Correo electrónico</label>
-                            <input type="email" name="email" id="email" required  
-                                class="form_control" placeholder="Escribe un correo electrónico">
+                            <label for="email" class="form_label">Correo electrónico</label>
+                            <input type="email" name="email" id="email" required class="form_control" placeholder="Escribe un correo electrónico">
                             </fieldset>
                         </datalist>
                         <label for="info" class="form_label">Otros datos personales</label>
@@ -67,9 +65,9 @@
                         <div class="form_control">
                             <input type="radio" name="yes" id="Y" value="Y" required>
                             <label for="yes">Si</label>
-                            <input type="radio" name="no" id="N" value="N">
+                            <input type="radio" name="no" id="N" value="N"required>
                             <label for="no">No</label>
-                            <input type="radio" name="podria ser mejor" id="PM" value="PM">
+                            <input type="radio" name="podria ser mejor" id="PM" value="PM"required>
                             <label for="podria ser mejor">Podria mejorar</label>   
                         </div>
                     </fieldset>
@@ -78,9 +76,9 @@
                             <div class="form_control">
                                 <input type="radio" name="Si mucho" id="SM" value="SM" required>
                                 <label for="Si mucho">Si mucho</label>
-                                <input type="radio" name="No me interesa" id="NMI" value="NMI">
+                                <input type="radio" name="No me interesa" id="NMI" value="NMI"required>
                                 <label for="No me interesa">No me interesa</label>
-                                <input type="radio" name="La tomare en cuenta" id="LTC" value="LTC">
+                                <input type="radio" name="La tomare en cuenta" id="LTC" value="LTC"required>
                                 <label for="La tomare en cuenta">La tomare en cuenta</label>   
                             </div>
                         </fieldset>
@@ -89,11 +87,11 @@
                             <div class="form_control">
                                 <input type="radio" name="Otoño" id="OÑ" value="OÑ" required>
                                 <label for="Otoño">Otoño</label>
-                                <input type="radio" name="Invierno" id="IO" value="IO">
+                                <input type="radio" name="Invierno" id="IO" value="IO"required>
                                 <label for="Invierno">Invierno</label>
-                                <input type="radio" name="Primavera" id="PA" value="PA">
+                                <input type="radio" name="Primavera" id="PA" value="PA"required>
                                 <label for="Primavera">Primavera</label>  
-                                <input type="radio" name="Verano" id="VO" value="VO">
+                                <input type="radio" name="Verano" id="VO" value="VO"required>
                                 <label for="Verano">Verano</label>  
                             </div>
                                 <label for="info" class="form_label">¿Por que?</label>
@@ -111,20 +109,20 @@
                             <option>Ratatouille</option>
                             <option>Quiche Lorraine</option>
                             <option>Foie gras</option>
-                            <optgroup label="Dulces"></optgroup>
+                            <optgroup label="Dulces">
                             <option>Brioche</option>
                             <option>Tarte Tatin</option>
                             <option>Petit four</option>
                             <option>Croissants</option>
                         </optgroup>
-                        </fieldset>        
-                        <fieldset>
-                            <legend>Condiciones</legend>
-                            <p>Se compromete a aprobarme con buena nota por mi esfuerzo y amor dedicados a esta página web.</p>
-                            <p>Profesor apruebame por favor.</p>
-                            <input type="checkbox" name="isOk" id="isOk" required>
-                            <label for="isOk">Estoy de acuerdo con las condiciones</label>
-                        </fieldset>
+                        </fieldset> 
+                          <fieldset>
+                                <legend>Condiciones</legend>
+                                <p>Se compromete a aprobarme con buena nota por mi esfuerzo y amor dedicados a esta página web.</p>
+                                <p>Profesor apruebame por favor.</p>
+                                <input type="checkbox" name="isOk" id="isOk" required>
+                                <label for="isOk">Estoy de acuerdo con las condiciones</label>
+                            </fieldset>      
                     <button type="submit">
                         Enviar<i class="fas fa-paper-plane"></i>
                     </button>
