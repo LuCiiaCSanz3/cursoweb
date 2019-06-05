@@ -1,28 +1,15 @@
 
-/* fondo de color para el titulo y footer
-Fondo : gradiente lineal (al fondo, rgba (171,219,237,1) 0%, rgba (178,247,232,1) 31%, rgba (250,173,209,1) 70%, rgba (238,186,255,1) 100%);
-filter : progid: DXImageTransform.Microsoft.gradient (startColorstr = '# abdbed', endColorstr = '# eebaff', GradientType = 0);
-*/
-
-
 /* mi paleta de colores:
 -#E8D7F1 lila body
 -#B5E2FA azul titulo grande
 -#EBF8B8 amarillo
 -#EDAFB8 rosa
 -#BAFFDF verde
-
 */
+
 * {
     box-sizing: border-box;
    
-}
-
-@font-face {
-    font-family: 'Bigdey Demo.ttf';
-    src: url('../assets/Bigdey\ Demo.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
@@ -32,6 +19,19 @@ filter : progid: DXImageTransform.Microsoft.gradient (startColorstr = '# abdbed'
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GarineldoNo01.otf';
+    src: url('../assets/GarineldoNo01.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lamor Demo.ttf';
+    src: url('../assets/Lamor\ Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     line-height: 1;
@@ -42,7 +42,8 @@ body{
     min-height: 100vh;
     color:#E8D7F1;
     justify-content: center;
-    background-image: url(../assets/paris_desde_el_cielo_-bicubic.jpg);
+    background-image: url(../assets/paris\ desde\ el\ cielo3.jpg);
+    background-attachment: fixed;
     margin: 0;
 }
 
@@ -52,7 +53,7 @@ header{
 }
 
 .main_header {
-    font-family: 'Bigdey Demo.ttf';
+    font-family: 'Lamor Demo.ttf';
     background-image: url(../assets/nubes\ de\ ensueño\ 3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,14 +64,14 @@ header{
 }    
 
     .main_header h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         display: block;
         margin-block-start: 1rem;
         margin-block-end: 1rem;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         font-weight: bold;
-        
+        color: rgb(146, 255, 255);
     }
 
     .main_header p {
@@ -78,6 +79,9 @@ header{
         font-weight: bold;
         margin-top: -1rem;
         margin-bottom: 0;
+        font-family: 'GarineldoNo01.otf';
+        color: rgb(146, 255, 255);
+        
     }
 
     p {
@@ -104,15 +108,18 @@ header{
         display: block;
         padding: 1rem;
     }
-    
-  
+
 ul {
     display: block;
+    list-style-type: disc;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+    font-size: 1.8rem;
+    font-family: 'GarineldoNo01.otf';
+    color: rgb(146, 255, 255);
 }
 
 h2 {
@@ -124,10 +131,20 @@ h3 {
 }
 h4 {
     color: #EBF8B8;
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1rem;
+    color: rgb(0, 255, 242);
 }
 
 figcaption {
     color: #EBF8B8;
+}
+
+img {
+    max-width: 100%;
 }
 
 .main_table {
@@ -171,18 +188,73 @@ caption {
     height: 60vh;
 }
 
+.form_control {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(146, 255, 255);
+    padding-top: 0.7rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+    color: black;
+    background-color:  #EDAFB8;
+    font-family: 'Supernova.ttf', cursive;
+}
+
+
+.form_label {
+    display: block;
+    margin-top: 1rem;
+    color: rgb(146, 255, 255);
+}
+
+fieldset {
+    margin-bottom: 1rem;
+    border-color: rgb(146, 255, 255);
+}
+
+footer i {
+    color: aqua;
+}
+.main_section_footer i {
+    /*color:#BAFFDF;*/
+    color:aqua;
+}
+
+.main_section_footer {
+    text-align: right;
+    font-size: 2rem;
+}
+
+
+.main_footer aside li {
+   display: inline-block;
+}
+
+
+.main_footer aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .iframe_footer {
     width: 100%;
     height: 20vh;
-    border: none;
+    border: 0;
     background-color: #EDAFB8;
 }
 
 .main_footer {
     font-family: 'Supernova.ttf';
-    color: rgb(74, 153, 196);
+    color: aqua;
     background-color:rgb(218, 153, 250); ; 
     text-align: center;
     padding: 1rem;
     display: block;
+    background-image: url(../assets/nubes\ de\ ensueño\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: initial;
 }

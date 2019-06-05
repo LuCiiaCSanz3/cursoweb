@@ -6,8 +6,138 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
-<body>
-    
+<body id="Formulario">
+        <header class="main_header">
+            <h1>Paris</h1>
+            <p>Una ciudad para soñar</p>
+            <nav>
+                <ul>
+                    <li><a href="./index.html" >Historia</a></li>
+                    <li><a href="./clima.html">clima</a></li>
+                    <li><a href="./comida.html">Comida</a></li>
+                    <li><a href="./sitios_para_ver.html">Sitios para ver</a></li>
+                    <li><a href="./experiencia_personal.html">Experiencia personal</a></li>
+                    <li><a href="./popUp_bts.html">Pop Up BTS</a></li>
+                    <li><a href="./concierto.html">Concierto</a></li>
+                    <li><a href="#Formulario" rel="tag">Formularios</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>Formulario de contacto</h2>
+            <p>Dejad vuestros datos y preguntas</p>
+            <form action="https://jsonplaceholder.typicode.com/users"
+                    name="complete-post"  method="POST">
+                    <fieldset id="Datos_personales">
+                        <legend>Datos personales</legend>
+                        <label for="UserName" class="form_label">
+                            Nombre y Apellidos</label>
+                        <input type="text" name="UserName" id="UserName" required
+                            class="form_control" placeholder="Nombre y Apellidos">
+                        <label for="birthDate" class="form_label">Fecha de nacimiento</label>
+                            <input type="date" name="birthDate" id="birthDate" class="form_control">
+                            <fieldset>
+                            <label for="Profesión" class="form_label">Profesión</label>
+                            <select name="Profesión" id="Profesión" class="form_control" required>
+                            <option value="">Elije una Profesión</option>
+                            <optgroup label="Profesión">
+                                <option>Estudiante</option>
+                                <option>Desempleado</option>
+                                <option>Profesor</option>
+                                <option>Fotógrafo</option>
+                                <option>Escritor</option>
+                                <option>Empresario</option>
+                                <option>Comercial</option>
+                                <option>Otros</option>
+                            </optgroup>
+                            <label for="email" class="form_label">
+                                Correo electrónico</label>
+                            <input type="email" name="email" id="email" required  
+                                class="form_control" placeholder="Escribe un correo electrónico">
+                            </fieldset>
+                        </datalist>
+                        <label for="info" class="form_label">Otros datos personales</label>
+                        <textarea name="info" id="info" class="form_control" rows="5" placeholder="Más información"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preguntas sobre mi página web</legend>
+                        <label class="form_label">¿Esta bien creada?</label>
+                        <div class="form_control">
+                            <input type="radio" name="yes" id="Y" value="Y" required>
+                            <label for="yes">Si</label>
+                            <input type="radio" name="no" id="N" value="N">
+                            <label for="no">No</label>
+                            <input type="radio" name="podria ser mejor" id="PM" value="PM">
+                            <label for="podria ser mejor">Podria mejorar</label>   
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                            <label class="form_label">¿Te ha servido la información?</label>
+                            <div class="form_control">
+                                <input type="radio" name="Si mucho" id="SM" value="SM" required>
+                                <label for="Si mucho">Si mucho</label>
+                                <input type="radio" name="No me interesa" id="NMI" value="NMI">
+                                <label for="No me interesa">No me interesa</label>
+                                <input type="radio" name="La tomare en cuenta" id="LTC" value="LTC">
+                                <label for="La tomare en cuenta">La tomare en cuenta</label>   
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label class="form_label">¿En que estación del año irías?</label>
+                            <div class="form_control">
+                                <input type="radio" name="Otoño" id="OÑ" value="OÑ" required>
+                                <label for="Otoño">Otoño</label>
+                                <input type="radio" name="Invierno" id="IO" value="IO">
+                                <label for="Invierno">Invierno</label>
+                                <input type="radio" name="Primavera" id="PA" value="PA">
+                                <label for="Primavera">Primavera</label>  
+                                <input type="radio" name="Verano" id="VO" value="VO">
+                                <label for="Verano">Verano</label>  
+                            </div>
+                                <label for="info" class="form_label">¿Por que?</label>
+                                <textarea name="info" id="info" class="form_control" rows="5" placeholder=""></textarea>
+                        </fieldset>
+                        <fieldset>
+                        <label for="comida" class="form_label">Plato típico que más te a gustado</label>
+                        <select name="comida" id="comida" class="form_control" required>
+                        <option value="">Elije un plato</option>
+                        <optgroup label="comida">
+                            <optgroup label="Salado">
+                            <option>Soupe a l´oignon</option>
+                            <option>Coq au vin</option>
+                            <option>Escargots</option>
+                            <option>Ratatouille</option>
+                            <option>Quiche Lorraine</option>
+                            <option>Foie gras</option>
+                            <optgroup label="Dulces"></optgroup>
+                            <option>Brioche</option>
+                            <option>Tarte Tatin</option>
+                            <option>Petit four</option>
+                            <option>Croissants</option>
+                        </optgroup>
+                        </fieldset>        
+                        <fieldset>
+                            <legend>Condiciones</legend>
+                            <p>Se compromete a aprobarme con buena nota por mi esfuerzo y amor dedicados a esta página web.</p>
+                            <p>Profesor apruebame por favor.</p>
+                            <input type="checkbox" name="isOk" id="isOk" required>
+                            <label for="isOk">Estoy de acuerdo con las condiciones</label>
+                        </fieldset>
+                    <button type="submit">
+                        Enviar<i class="fas fa-paper-plane"></i>
+                    </button>
+                    <button type="reset">
+                        Borrar<i class="fas fa-eraser"></i>
+                    </button>
+                </form>
+                <footer class="main_section_footer">
+                    <a href=#Formulario rel="tag" title="Formulario">
+                        <i class="fas fa-home"></i>
+                    </a>     
+                </footer>
+        </section>
+    <iframe class="iframe_footer" src="./footer.html"></iframe>
 </body>
 </html>
