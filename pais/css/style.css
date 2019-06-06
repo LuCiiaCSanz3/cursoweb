@@ -7,10 +7,6 @@
 -#BAFFDF verde
 */
 
-* {
-    box-sizing: border-box;
-   
-}
 
 @font-face {
     font-family: 'Supernova.ttf';
@@ -27,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'Lamor Demo.ttf';
+    font-family: 'LamorDemo.ttf';
     src: url('../assets/Lamor\ Demo.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -42,7 +38,7 @@ body{
     min-height: 100vh;
     color:#E8D7F1;
     justify-content: center;
-    background-image: url(../assets/paris\ desde\ el\ cielo3.jpg);
+    background-image: url(../assets/parisdesdeelcielo3.jpg);
     background-attachment: fixed;
     margin: 0;
 }
@@ -53,8 +49,8 @@ header{
 }
 
 .main_header {
-    font-family: 'Lamor Demo.ttf';
-    background-image: url(../assets/nubes\ de\ ensueño\ 3.jpg);
+    font-family: 'LamorDemo.ttf';
+    background-image: url(../assets/nubesdeensueño3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -201,6 +197,9 @@ caption {
     font-family: 'Supernova.ttf', cursive;
 }
 
+div {
+    display: block;
+}
 
 .form_label {
     display: block;
@@ -212,6 +211,18 @@ fieldset {
     margin-bottom: 1rem;
     border-color: rgb(146, 255, 255);
 }
+
+.form_control::placeholder { 
+    opacity: 1; 
+  }
+
+.form_control:-ms-input-placeholder { 
+    color: rgba(166, 15, 172, 0.63);
+  }
+  
+.form_control::-ms-input-placeholder { 
+    color: rgba(166, 15, 172, 0.63);
+  }
 
 footer i {
     color: aqua;
