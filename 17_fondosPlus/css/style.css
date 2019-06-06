@@ -1,118 +1,179 @@
 body {
     margin: 0;
 }
-
-header{
+header {
+    color: aqua;
     position: relative;
     min-height: 100vh;
     display: flex;
-    align-items: center; /* vertical */
     justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
 }
 
 header::before {
+    content: '';
     display: block;
-    content: '' ;
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    
-    opacity: 0.5;
-
-    background-image: url(../assets/IMAGEN\ DE\ GATO\ BANGALI.jpg);
+    z-index: 10;
+    opacity: 0.3;
+    background-image: url(../assets/komodo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-blend-mode: multiply;
-
-
 }
-
 
 h1 {
-    color:greenyellow;
-    z-index: 20;
-}
-
-.content_wrapper {
-    background-image: url(../assets/IMAGEN\ DE\ GATO\ BANGALI.jpg);
-    background-repeat: no-repeat;
-    background-size: unset;
-    background-attachment: fixed; .
-    margin-left: 4rem;
-    margin-right: 4rem;
-}
-
-.main_footer {
-
-    font-family: calibri;
-    background-color: greenyellow;
-    color: grey;
-    padding: 1rem;
+    z-index: 30;
+    width: fit-content;
     text-align: center;
+    padding: 2rem;
+    margin: 0;
 }
 
-img {
-    position: absolute;
-    opacity: 0.3;
-    max-width: 250px;
-    width: 600px;
-}
-
-.imagen {
-    margin-top: 10px;
+.logo {
     display: block;
     position: absolute;
-    top:2rem;
+    top: 2rem;
+    right: 2rem;
+    width: 20%; 
+    opacity: 0.4;
+}
+
+.logo img {
+    max-width: 100%;
+    min-width: 80px;
+}
+
+nav a {
+	color: inherit;
+	text-decoration: none;
+}
+nav ul {
+	list-style-type: none;
+}
+
+nav.horizontal {
+    display: none;
+}
+
+nav.icon,
+nav.horizontal {
+    position: absolute; 
+    top: 3rem;
     left: 3rem;
-    width: 100%;
-    min-width: 80%;
-
+    z-index: 30;
 }
 
-
-.menu ul {
-     list-style-type: none;
-     padding: 1rem 5rem;
+nav.icon {
+    color: aqua;
+    font-size: 3rem;
 }
 
-.menu nav {
-    color:salmon;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+nav.footer {
+    color: aqua;
+    background-color: rgba(200,200,200,0.5);	
+    border: 1px solid #ba89a8; /*violeta*/
+    width: 90%;
+    margin: 1rem auto;
 }
 
-.menu li {
-    display: inline-block;
-    padding: 1rem 1rem;
-    border: 3px solid salmon;
-    margin: 0rem 0.5rem;
-    background-color: greenyellow;
+.content-wrapper {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
-.menu a {
-    color: inherit;
-    text-decoration: none;
-
+footer {
+    min-height: 10vh;
+    background-color:aqua;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu {
-    display: block;
-    position: absolute;
-    bottom:1rem;
+@media screen and (min-width: 500px) {
+    .content-wrapper {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }    
+}
+
+@media screen and (min-width: 650px) {
     
-    margin: 0
-}
+    .content-wrapper {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
 
-.submenu  {
-    position: absolute;
-    padding: 0;
-    left: 1rem;
-}
+    nav.footer,
+    nav.icon {
+        display: none;
+    }
 
-.submenu li {
-    display: list-item;
-    padding: 0.5rem 3rem;
-    margin: 0.5rem 0rem;
+    nav.horizontal {
+        display: initial;
+    }
+
+    nav li { /* Los li son contenedores, para poder fijar desde ellos posiciones absolutas */
+		position: relative;
+		}
+
+/*	el menú principal */
+
+	nav ul { /* Cualquier ul dentro de nav */
+		padding: 0;
+		margin: 0;
+		}
+	nav > ul > li { /* El primer nivel del menú */
+		float: left;
+		min-width: 7em; 
+		}
+
+	nav a { /* Cualquier a dentro de nav */
+		display: block;
+		padding: 0.3em 0.5em;
+		margin: 0.25em;
+		
+		background-color: rgba(200,200,200,0.5);	
+		border: 1px solid #ba89a8; /*violeta*/
+		border-radius: .5em;
+		text-align: center;
+	}
+	nav > ul a:focus,
+	nav > ul a:hover
+	{ /* Cualquier a dentro de nav */
+		/* color:#fc6; naranja
+		background-color: rgba(200,200,200,0.2) */
+		background-color: aqua;
+		color: yellowgreen;
+		border-color: #fff; /*blanco*/
+	}
+
+/* =================== */
+/* = submenús        = */
+/* =================== */
+			
+	li ul { /* El segundo nivel del menú oculto*/
+	 	display: none;
+	}
+	li:hover > ul { /* El segundo nivel del menú se muestra */
+	 	display: initial;
+        /* position: absolute; */ /*Determina que el submenu empuje o no el contenido del sitio al desplegrase*/
+	}
+
+/* =============================== */
+/* = submenús segundos	         = */
+/* =============================== */
+
+	li ul li ul {
+		position: absolute;
+		top: 0em;
+		left: 7em;
+		/* width: 10em;  */
+	}
+
 }

@@ -1,0 +1,18 @@
+@media screen and (min-width: 1000px) 
+{
+
+}
+
+
+/* ============== */
+/* = Contenidos = */
+/* ============== */
+
+	figure {
+		float: left;
+		width: 50%;
+	}
+	img {
+		width: 100%
+	}
+
