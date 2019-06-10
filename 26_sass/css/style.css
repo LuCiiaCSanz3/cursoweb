@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+
+.main_header {
+  background-color: #bebeff;
+  color: aquamarine;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+section {
+  margin: 2.6rem;
+}
+section header {
+  background-color: aquamarine;
+  color: #bebeff;
+}
+
+/*# sourceMappingURL=style.css.map */
