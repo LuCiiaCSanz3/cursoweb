@@ -1,0 +1,176 @@
+:root {
+--color-letra: rgb(248, 200, 142);
+--color-fondo: aquamarine;
+--color-melocotón-fondo: rgb(245, 234, 218);
+--color-coral-borde: aquamarine;
+--font-main: 'Goudy Bookletter 1911', serif;
+--font-title:'Cinzel Decorative', cursive;
+--size-title: 2rem;
+--size-subtitle: 1.5rem;
+--size-title-section: 1.5rem;
+--size-title-article: 2rem;
+--size-base: 1.2rem;
+--size-small: calc(16rem/16);
+--margin-vertical: 1.5rem;
+--margin-lateral: 2rem;
+--margin-parrafo: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+body {
+    line-height: 1;
+    font-family: var(--font-main); 
+    font-size: var(--size-base);
+}
+
+/****************
+Estilos de header
+*****************/
+
+.header{
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+    font-family: var(--font-title);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+    .header h1 {
+        font-size: var(--size-title);
+    }
+
+    .header p {
+        font-size: var(--size-subtitle);
+    }
+
+/****************
+Estilos de footer
+*****************/
+
+.footer{
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+    text-align: center;
+    font-size: var(--size-small);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    }
+    
+    .footer address {
+        font-style: normal;
+    }
+
+    .footer a {
+    color: inherit;
+}
+
+/***************
+Estilos de main
+****************/
+
+main {
+    margin: var(--margin-vertical) var(--margin-lateral);
+    vertical-align: middle;
+}
+
+    main h2 {
+        font-size: var(--size-title-section);
+        font-weight: bold;
+        padding-left: 1rem;
+        margin-bottom: cal( var(--margin-vertical)/2);
+        margin-top: cal( var(--margin-vertical)/2);
+    }
+
+    main h3 {
+        font-size: var(--size-title-article);
+        font-weight: bold;
+    }
+
+    main p {
+        margin-bottom: var(--margin-parrafo);
+        margin-top: var(--margin-parrafo); 
+    }
+
+/*********************************
+Estilos de las sección 
+**********************************/
+
+section {
+    margin-top: var(--margin-vertical);
+    margin-bottom: var(--margin-vertical);
+}
+
+section>header {
+    color: var(--color-fondo);
+    background-color: var(--color-letra);
+    padding: 0.3rem 1rem;
+    margin-bottom: var(--margin-parrafo);
+}
+
+section article {
+    width: 50%;
+    padding: 1rem;
+    background-color: var(--color-melocotón-fondo);
+    border: 1px solid var(--color-coral-borde);
+}
+
+section.inline-block article{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem;
+    background-color: var(--color-melocotón-fondo);
+    border: 1px solid var(--color-coral-borde);
+}
+
+section.inline-block article:nth-of-type(2) {
+    margin-left: -5px;
+}
+
+section.float article {
+    float: left;
+}
+
+section.float::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+section .table {
+    display: table;
+}
+
+section .table article {
+    display: table-cell;
+}
+
+section .flex {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;*/
+}
+
+section .flex article{
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    section .flex {
+        flex-direction: row;
+    }
+}
+
