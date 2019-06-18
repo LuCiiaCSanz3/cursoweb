@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trabajo Web País</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
@@ -29,7 +29,7 @@
             <h2>Formulario de contacto</h2>
             <p>Dejad vuestros datos y preguntas</p>
         </section>
-            <form action="https://jsonplaceholder.typicode.com/users" name="complete-post"  method="POST"></form>
+            <form action="https://jsonplaceholder.typicode.com/users" name="complete-post"  method="POST">
                     <fieldset id="Datos_personales">
                         <legend>Datos personales</legend>
                         <label for="UserName" class="form_label">
@@ -61,63 +61,64 @@
                     </fieldset>
                     <fieldset>
                         <legend>Preguntas sobre mi página web</legend>
-                        <label class="form_label">¿Esta bien creada?</label>
-                        <div class="form_control">
-                            <input type="radio" name="respuesta" id="Y" value="Y" required>
-                        <label for="Y">Si</label>
-                            <input type="radio" name="respuesta" id="N" value="N" required>
-                        <label for="N">No</label>
-                            <input type="radio" name="respuesta" id="PM" value="PM" required>
-                        <label for="PM">Podria mejorar</label>   
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                            <label class="form_label">¿Te ha servido la información?</label>
-                            <div class="form_control">
-                                <input type="radio" name="respuesta" id="SM" value="SM" required>
-                            <label for="SM">Si mucho</label>
-                                <input type="radio" name="respuesta" id="NMI" value="NMI" required>
-                            <label for="NMI">No me interesa</label>
-                                <input type="radio" name="respuesta" id="LTC" value="LTC" required>
-                            <label for="LTC">La tomare en cuenta</label>   
-                            </div>
-                    </fieldset>
                     <fieldset>
                             <label class="form_label">¿En que estación del año irías?</label>
                             <div class="form_control">
-                                <input type="radio" name="respuesta" id="OÑ" value="OÑ" required>
-                            <label for="OÑ">Otoño</label>
-                                <input type="radio" name="respuesta" id="IO" value="IO" required>
-                            <label for="IO">Invierno</label>
-                                <input type="radio" name="respuesta" id="PA" value="PA" required>
-                             <label for="PA">Primavera</label>  
-                                <input type="radio" name="respuesta" id="VO" value="VO" required>
-                            <label for="VO">Verano</label>  
+                                <input type="radio" name="estación"  value="OÑ" required>Otoño
+                                <input type="radio" name="estación"  value="IO">Invierno
+                                <input type="radio" name="estación"  value="PA">Primavera  
+                                <input type="radio" name="estación"  value="VO">Verano
                             </div>
                                 <label for="info" class="form_label">¿Por que?</label>
                                 <textarea name="porque" id="pregunta" class="form_control" rows="5" placeholder=""></textarea>
                     </fieldset>
                     <fieldset>
-                        <label for="comida" class="form_label">Plato típico que más te a gustado</label>
-                        <select name="comida" id="comida" class="form_control" required>
-                        <option value="">Elije un plato</option>
-                        <optgroup label="comida">
-                            <optgroup label="Salado">
-                            <option>Soupe a l´oignon</option>
-                            <option>Coq au vin</option>
-                            <option>Escargots</option>
-                            <option>Ratatouille</option>
-                            <option>Quiche Lorraine</option>
-                            <option>Foie gras</option>
-                            <optgroup label="Dulces">
-                            <option>Brioche</option>
-                            <option>Tarte Tatin</option>
-                            <option>Petit four</option>
-                            <option>Croissants</option>
-                        </optgroup>
-                        </select>
-                    </fieldset> 
-                    
+                            <label for="comida" class="form_label">Plato típico que más te a gustado</label>
+                            <select name="comida" id="comida" class="form_control" required>
+                            <option value="">Elije un plato</option>
+                            <optgroup label="comida">
+                                <optgroup label="Salado">
+                                <option>Soupe a l´oignon</option>
+                                <option>Coq au vin</option>
+                                <option>Escargots</option>
+                                <option>Ratatouille</option>
+                                <option>Quiche Lorraine</option>
+                                <option>Foie gras</option>
+                                <optgroup label="Dulces">
+                                <option>Brioche</option>
+                                <option>Tarte Tatin</option>
+                                <option>Petit four</option>
+                                <option>Croissants</option>
+                            </optgroup>
+                            </select>
+                        </fieldset> 
+                    <fieldset>
+                        <label class="form_label">¿Cual es la sección que mas te a gustado?</label>
+                        <div class="form_control">
+                            <input type="radio" name="sección" value="H">Historia
+                            <input type="radio" name="sección" value="CA">Clima
+                            <input type="radio" name="sección" value="CDA">Comida
+                            <input type="radio" name="sección" value="SPV">Sitios para Ver
+                            <input type="radio" name="sección" value="EP">Experiencia personal
+                            <input type="radio" name="sección" value="PUB">Pop up BTS
+                            <input type="radio" name="sección" value="CO">Concierto
+                        </div>
+                    </fieldset>
+                    <label class="form_label">¿Esta bien creada?</label>
+                        <div class="form_control">
+                            <input type="radio" name="respuesta"  value="Y">Si
+                            <input type="radio" name="respuesta"  value="N">No
+                            <input type="radio" name="respuesta"  value="PM">Podria mejorar 
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                            <label class="form_label">¿Te ha servido la información?</label>
+                            <div class="form_control">
+                                <input type="radio" name="información"  value="SM" required>Si mucho
+                                <input type="radio" name="información"  value="NMI">No me interesa
+                                <input type="radio" name="información"  value="LTC">La tomare en cuenta
+                            </div>
+                    </fieldset>
                     <fieldset>
                         <legend>Condiciones</legend>
                         <p>Se compromete a aprobarme con buena nota por mi esfuerzo y amor dedicados a esta página web. Profesor apruebame por favor.</p>
@@ -128,8 +129,9 @@
                         Enviar<i class="fas fa-paper-plane"></i>
                     </button>
                     <button type="reset">
-                         Borrar<i class="fas fa-eraser"></i>
-                    </button>   
+                        Borrar<i class="fas fa-eraser"></i>
+                    </button>
+            </form> 
                 <footer class="main_section_footer">
                     <a href=#Formulario rel="tag" title="Formulario">
                         <i class="fas fa-home"></i>
