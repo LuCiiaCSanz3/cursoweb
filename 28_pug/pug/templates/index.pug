@@ -1,0 +1,96 @@
+// esto es un comentario
+    esto sigue siendo un comentario
+
+//-esto es un comentario solo para pug
+    más comentario
+
+-const page = 2
+-const titulo = 'Hola Pug'
+-const charset = 'utf-8'
+-const empresa = 'Colegio <b>Tajamar</b>'
+-const aPaises = [{nombre: 'España', id: 'es'},{nombre: 'Francia', id: 'es'},{nombre: 'Italia', id: 'es', description: 'Bla Bla Bla'}]
+-const aMenu = ['Inicio', 'Porfolio', 'Clientes', 'Nosotros']
+-const aMenuP = ['Web', 'Mobile Apps', 'IX / UI']
+
+- let x = 5
+- x = x*x
+
+- function suma (x,y) {}
+
+// Mixin
+mixin itemMenu(item)
+    li
+        a(href="#"+item.toLowerCase()) #{item}
+
+mixin inputGroup(inputName)
+    .form-group
+        label(for=inputName.toLowerCase()) #{inputName}:
+        block 
+        p.error(hidden) Aquí iran los errores
+
+doctype
+html(lang=language)
+    head
+        meta(charset=charset)
+        title #{titulo}
+        link(rel="stylesheet", href="./css/style.css")
+    body
+        // Comentario
+        header.main-header#main-header
+        -if (page == 1) {
+            h1= titulo
+        -} else {
+            h1 #{titulo} - Continuación
+        -}
+
+        main
+            section#Inicio
+                header
+                    h2 Inicio
+                p.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, molestias porro aliquid nam quam neque illo, consectetur, at possimus distinctio ullam praesentium nisi officia veniam ipsa ipsam. Soluta, nobis dolorum.    
+                p.  Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. Ipsa et id excepturi         voluptate placeat commodi, ratione molestias sequi ipsum perspiciatis voluptas        quisquam odio cumque maxime rem obcaecati consequatur quos 
+                        b maiores!   
+                .info Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis enim cum ad facilis esse, aspernatur dicta rem sequi eius. Repellat sint ex rem facilis, voluptatibus iusto quisquam quidem quos.
+            figure
+                img(src="https:/http://via.placeholder.com/500x350/")
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid debitis vel dolores voluptate inventore, nemo omnis, ex unde error modi hic dignissimos beatae voluptatibus aliquam culpa ullam quam nesciunt molestiae?
+            section#Clientes
+                header
+                    h2 Clientes
+                p Seleccione el area
+                form(action="")
+                    select(name="pais")
+                    //-for i=0; i < aPaises.length; i++ {
+                        - let item = aPaises[i]-}
+                    each item in aPaises
+                        option(value=item.id title=item.description) #{item.nombre}
+            section#porfolio
+                header
+                    h2 Profolio
+                    nav
+                        ul
+                            each item in aMenuP
+                                +itemMenu(item)
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat odio cumque sapiente! Explicabo, animi ducimus! Natus modi laudantium commodi recusandae veritatis dolores fuga, quis sint, voluptatem consequatur atque, non cumque.
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam neque deleniti corrupti recusandae voluptas omnis sit laborum aspernatur veritatis debitis, repellat repellendus quidem impedit quod ullam maxime sequi incidunt quae!
+            section#Nosotros
+                header
+                    h2=aMenu[4].nombre
+                    p=aMenu.description
+                h3 Formulario de contactos
+                form(action="")
+                    +inputGroup('Nombre')
+                        input(type="text", name="nombre")
+                    +inputGroup('Email')
+                        input(type="email", name="email")
+                    +inputGroup('Password')
+                        input(type="password", name="password")
+                    +inputGroup('Comentarios')
+                        textarea(name="comentarios", cols="30", rows="10")
+
+
+        footer(class="main-footer")
+            address &copy; #{autor} 
+            div
+                small!= empresa
