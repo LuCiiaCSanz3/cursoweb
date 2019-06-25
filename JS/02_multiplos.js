@@ -69,7 +69,6 @@ console.log(isMultiplo(2,21))
  * @returns {array}
  */
 
-
 function extraerMultiplos(n = 0, aDatos = []) {
     let r = []
     for (let i = 0; i < aDatos.length; i++) {
@@ -82,16 +81,12 @@ function extraerMultiplos(n = 0, aDatos = []) {
     return r
 }
 
-
-
-{
 /*for (let i = 0; i < array.length; i++) {
     const element = array[i];
     
 }
 
 n%3 == 0 */
-}
 
 isMultiplo()
 
@@ -100,6 +95,8 @@ module.exports.isMultiplo = isMultiplo
 module.exports.extraerMultiplos = extraerMultiplos
 
 {
-let aDatos = [1,2,3,4,5,6,7,8,9]
-mostrarMultiplos(2, aDatos)
+let misDatos = [1,2,3,4,5,6,7,8,9]
+mostrarMultiplos(2, misDatos)
 }
+
+
