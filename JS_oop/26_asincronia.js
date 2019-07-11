@@ -1,13 +1,13 @@
    const respuestas = [
        '',
-       ['Esto es un mensaje', 2],
+       ['Esto es un mensaje', 3],
        ,
-       ['construido a cachitos', 4],
+       ['construido a cachitos', 7],
        ,
        ,
        ,
-       ['mediante la lectura secuencial', 6],
-       ['de varios items de un array', ]
+       ['mediante la lectura secuencial', 8],
+       ['de varios items de un array', 9]
    ]
    
    function leerDatosAsinc(i, timer = 1000, callback) {
